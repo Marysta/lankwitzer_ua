@@ -8,7 +8,7 @@
     Document Title
     =============================================
     -->
-    <title>Замовити дзвінок|Lankwitzer Україна </title>
+    <title>Контакти|Lankwitzer Україна </title>
     <!--
     Favicons
     =============================================
@@ -36,6 +36,7 @@
 
     -->
     <!-- Default stylesheets-->
+    <link href="https://fonts.googleapis.com/css?family=Merriweather|Roboto+Slab" rel="stylesheet">
     <link href="assets/lib/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
     <!-- Template specific stylesheets-->
     <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700" rel="stylesheet">
@@ -68,7 +69,7 @@
               <li><a href="about.html">Про Компанію</a></li>
                 <li><a href="typovi.html">Продукція-Рішення</a></li>
                    <li><a href="katalog.html">Каталог</a></li>
-                     <li><a href="contact.html"><i class="fa fa-cog fa-spin"></i> Підбір покриття</a></li>
+                     <li><a href="pidbir.html"><i class="fa fa-cog fa-spin"></i> Підбір покриття</a></li>
                        <li ><a href="contact.html">Контакти</a></li>
                          <li><a class="navbar-brand" href="#" > +380503715669</a></li>
 
@@ -78,17 +79,17 @@
       </nav>
 
       <div class="main">
-        <section class="module bg-light" id="contact">
+        <section class="module" data-background="assets/images/gradient3.png" id="contact">
           <div class="container">
             <div class="row">
               <div class="col-sm-6 col-sm-offset-3">
-                <h2 class="module-title font-alt">ЗАМОВИТИ ДЗВІНОК</h2>
+                <h2 class="module-title font-alt">Підібрати покриття</h2>
                 
               </div>
             </div>
             <div class="row">
               <div class="col-sm-8">
-              
+                <div class="module-subtitle">Форма запиту</div>
                 <form id="contactForm" role="form" method="post" action="php/contact.php">
                   <div class="form-group">
                     <label class="sr-only" for="name">Ваше ім'я</label>
@@ -96,8 +97,12 @@
                     <p class="help-block text-danger"></p>
                   </div>
                   <div class="form-group">
-                    <label class="sr-only" for="phone">Ваш номер телефону</label>
-                    <input class="form-control" type="phone" id="email" name="phone" placeholder="Ваш номер телефону*" required="required" data-validation-required-message="Ваш номер телефону"/>
+                    <label class="sr-only" for="email">Ваша електронна адреса</label>
+                    <input class="form-control" type="email" id="email" name="email" placeholder="Ваш Email*" required="required" data-validation-required-message="Ваша електронна адреса"/>
+                    <p class="help-block text-danger"></p>
+                  </div>
+                  <div class="form-group">
+                    <textarea class="form-control" rows="7" id="Ваш запит" name="message" placeholder="Повідомлення*" required="required" data-validation-required-message="Ваш запит"></textarea>
                     <p class="help-block text-danger"></p>
                   </div>
                   <div class="text-center">
@@ -121,24 +126,16 @@
             </div>
           </div>
         </section>
-     <wrapper data-toggle="modal" data-target="#exampleModalCenter">
-    <div class="dws">
-        <div class="pulse">
-            <div class="bloc"></div>
-            <div class="phone"><i class="fa fa-phone" aria-hidden="true"></i></div>
-           <div class="text">Замовити дзвінок</div>
-        </div>
-    </div>
-  </wrapper>
+
         <div class="module-small bg-light" data-background="assets/images/gradient3.png">
           <div class="container">
             <div class="row">
               <div class="col-sm-4">
                 <div class="widget">
-                  <h5 class="widget-title font-alt">Дочірнє підприємство "Ланквітцер-Україна"</h5>
+                  <h5 class="widget-title font-alt">ДП "Ланквітцер-Україна"</h5>
                   <p>тел. (+380 32) 243-12-06<br>
                      факс. (+380 32) 243-12-04<br>
-                    моб. 050 3715669
+                   
                   <p>Email:<a href="#">info@lankwitzer.com.ua</a></p>
                 </div>
               </div>
@@ -156,14 +153,14 @@
                 <div class="widget">
                   <h5 class="widget-title font-alt">Продукція-Рішення</h5>
                   <ul class="icon-list">
-                    <li><a href="#">Залізничний траспорт</a></li>
-                    <li><a href="#">Лакофарбові матеріали УФ-полімеризації</a></li>
-                    <li><a href="#">Лакофарбові матеріали для погано підготовленої поверхні</a></li>
-                    <li><a href="#">Лакофарбові матеріали по кольоровим металам</a></li>
-                    <li><a href="#">Термостійкі лакофарбові матеріали</a></li>
-                    <li><a href="#">Антикорозія</a></li>
-                    <li><a href="#">Фарбування пластмас</a></li>
-                    <li><a href="#">Водорозчинні лакофарбові матеріали</a></li>
+                     <li><a href="typovi_gd.html">Залізничний траспорт</a></li>
+                    <li><a href="typovi_uf.html">Лакофарбові матеріали УФ-полімеризації</a></li>
+                    <li><a href="typovi_pogano.html">Лакофарбові матеріали для погано підготовленої поверхні</a></li>
+                    <li><a href="typovi_kolor.html">Лакофарбові матеріали по кольоровим металам</a></li>
+                    <li><a href="typovi_termo.html">Термостійкі лакофарбові матеріали</a></li>
+                    <li><a href="typovi_metal.html">Антикорозія</a></li>
+                    <li><a href="typovi_plastik.html">Фарбування пластмас</a></li>
+                    <li><a href="typovi_vodo.html">Водорозчинні лакофарбові матеріали</a></li>
 
                   </ul>
                 </div>
@@ -171,7 +168,15 @@
             </div>
           </div>
         </div>
-
+  <wrapper data-toggle="modal" data-target="#exampleModalCenter">
+    <div class="dws">
+        <a href="contact_form.html"><div class="pulse">
+            <div class="bloc"></div>
+            <div class="phone"><i class="fa fa-phone" aria-hidden="true"></i></div>
+            <div class="text">Замовити дзвінок</div>
+        </div></a>
+    </div>
+  </wrapper>
       </div>
       <div class="scroll-up"><a href="#totop"><i class="fa fa-angle-double-up"></i></a></div>
       <script async="" defer="" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDK2Axt8xiFYMBMDwwG1XzBQvEbYpzCvFU"></script>

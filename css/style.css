@@ -170,7 +170,7 @@ h2 {
   border: 0;
   border-radius: 0;
   z-index: 1000;
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto Slab', serif;
   text-transform: uppercase;
   letter-spacing: 3px;
   font-size: 11px;
@@ -253,7 +253,7 @@ h2 {
 }
 
 .navbar-custom .navbar-toggle .icon-bar {
-  background: #fff;
+  background: blue;
 }
 
 .dropdown-menu {
@@ -1284,9 +1284,17 @@ h2 {
 }
 .dws {
  position: fixed;
- top: 85%;
- left: 95%;
+ top: 88%;
+ left: 97%;
  transform: translate(-50%, -50%);
+}
+
+@media (max-width: 767px) {
+  .dws {
+ position: fixed;
+ top: 95%;
+ left: 50%;
+ transform: translate(-50%, -50%);}
 }
 .pulse, .bloc, .phone {
  position: absolute;
@@ -1302,7 +1310,7 @@ h2 {
  overflow: hidden;
 }
 .pulse {
- background: orange;
+ background-image: linear-gradient(to bottom right, red, yellow);
  position: relative;
  transition: .5s;
 }
