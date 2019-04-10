@@ -89,26 +89,28 @@
             </div>
             <div class="row">
               <div class="col-sm-8">
-                <div class="module-subtitle">Форма зворотнього зв'язку</div>
-                <form id="contactForm" role="form" method="post" action="https://formspree.io/drilmasha@gmail.com">
-                  <div class="form-group">
-                    <label class="sr-only" for="name">Ваше ім'я</label>
-                    <input class="form-control" type="text" id="name" name="name" placeholder="Ваше ім'я*" required="required" data-validation-required-message="Ваше ім'я"/>
-                    <p class="help-block text-danger"></p>
-                  </div>
-                  <div class="form-group">
-                    <label class="sr-only" for="email">Ваша електронна адреса</label>
-                    <input class="form-control" type="email" id="email" name="_replyto" placeholder="Ваш Email*" required="required" data-validation-required-message="Ваша електронна адреса"/>
-                    <p class="help-block text-danger"></p>
-                  </div>
-                  <div class="form-group">
-                    <textarea class="form-control" rows="7" id="Ваш запит" name="phone" placeholder="Повідомлення*" required="required" data-validation-required-message="Ваш запит"></textarea>
-                    <p class="help-block text-danger"></p>
-                  </div>
-                  <div class="text-center">
-                    <button class="btn btn-warning btn-block btn-round" id="cfsubmit" type="submit" value="Send">Надіслати</button>
-                  </div>
-                </form>
+                <div class="module-subtitle">Замовити дзвінок консультанта</div>
+                 <form class="form rqst-form" action="https://formspree.io/info@lankwitzer.com.ua "
+      method="POST">
+                    <div class="form-group col-sm-6 col-xs-12">
+                      <input class="form-control input-lg" type="text" name="name" placeholder="Ваше Імя"/>
+                    </div>
+                    
+                    <div class="form-group col-sm-6 col-xs-12">
+                      <input class="form-control input-lg" type="text" name="phone" placeholder="Номер телефону"/>
+                    </div>
+                      <div class="form-group col-sm-6 col-xs-12">
+                      <input class="form-control input-lg" type="text" name="subject" placeholder="Примітки"/>
+                    </div>
+                    <div class="form-group col-sm-6 col-xs-12">
+                      <button class="btn btn-warning btn-block btn-round" id="racSubmit" type="submit"><i class="fa fa-paper-plane-o"></i>ЗАМОВИТИ</button>
+                    </div>
+                    
+                    <input type="hidden" name="_next" value="http://lankwitzer-lackfabrik.com.ua/sent.html" />
+                    <input type="hidden" name="_language" value="uk" />
+                    <input type="hidden" name="_cc" value="predstavitelstwo@lankwitzer.com.ua" />
+                    <div id="requestFormResponse"></div>
+                  </form>
                 <div class="ajax-response font-alt" id="contactFormResponse"></div>
               </div>
               <div class="col-sm-4">
