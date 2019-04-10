@@ -90,10 +90,10 @@
             <div class="row">
               <div class="col-sm-8">
                 <div class="module-subtitle">Форма запиту</div>
-                <form action="https://formspree.io/drilmasha@gmail.com" method="POST" id="contactForm" role="form">
+             <form id="contactForm" role="form" method="post" action="https://formspree.io/drilmasha@gmail.com">
                   <div class="form-group">
                     <label class="sr-only" for="name">Ваше ім'я</label>
-                    <input class="form-control" type="text" name="name" placeholder="Ваше ім'я*" required="required" data-validation-required-message="Ваше ім'я"/>
+                    <input class="form-control" type="text" id="name" name="name" placeholder="Ваше ім'я*" required="required" data-validation-required-message="Ваше ім'я"/>
                     <p class="help-block text-danger"></p>
                   </div>
                   <div class="form-group">
@@ -106,12 +106,11 @@
                     <p class="help-block text-danger"></p>
                   </div>
                   <div class="text-center">
-                    <button class="btn btn-warning btn-block btn-round" id="cfsubmit" type="submit" value="send">Надіслати</button>
+                    <button class="btn btn-warning btn-block btn-round" id="cfsubmit" type="submit">Надіслати</button>
                   </div>
-                  <input type="hidden" name="_cc" value="another@email.com" />
-    
-                   <input type="hidden" name="_language" value="uk" />
                 </form>
+                <div id="contactFormResponse"></div>
+              </div>
               
               </div>
               <div class="col-sm-4">
