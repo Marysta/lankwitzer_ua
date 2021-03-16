@@ -3477,7 +3477,7 @@ div.startingPrice {
   margin-top: 10px;
 }
 .button:hover {
-  background-color: #b2eded;
+  background-color: white;
   border: none;
   border-bottom: solid 1px #000;
   box-shadow: 0 2px 3px #a8a8a8;
