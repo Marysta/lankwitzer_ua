@@ -3464,7 +3464,7 @@ div.startingPrice {
 .button {
   cursor: pointer;
   font-size: 14px !important;
-  color: red;
+  color: gray;
   padding: 7px 10px !important;
 
   text-decoration: none !important;
@@ -3472,12 +3472,12 @@ div.startingPrice {
   letter-spacing: 0 !important;
   background-color: white;
   border: none;
-  border-bottom: solid 1px #c90c12;
+  border-bottom: solid 1px #f2f6f7;
   text-align: center;
   margin-top: 10px;
 }
 .button:hover {
-  background-color: #c90c12;
+  background-color: #b2eded;
   border: none;
   border-bottom: solid 1px #000;
   box-shadow: 0 2px 3px #a8a8a8;
